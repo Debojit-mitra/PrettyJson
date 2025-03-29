@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="#00081c" stroke="#2d3748" stroke-width="2" />
+  
+  <!-- Stylized curly braces representing JSON -->
+  <path d="M70 50 C60 50, 50 60, 50 80 L50 90 C50 100, 45 105, 35 105 C45 105, 50 110, 50 120 L50 130 C50 150, 60 160, 70 160" 
+        fill="none" stroke="#5a67d8" stroke-width="8" stroke-linecap="round" />
+  
+  <path d="M130 50 C140 50, 150 60, 150 80 L150 90 C150 100, 155 105, 165 105 C155 105, 150 110, 150 120 L150 130 C150 150, 140 160, 130 160" 
+        fill="none" stroke="#5a67d8" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Stylized "P" for "Preety" -->
+  <path d="M80 80 L80 120 M80 80 C80 80, 100 80, 100 95 C100 110, 80 110, 80 110" 
+        fill="none" stroke="#ed64a6" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+        
+  <!-- Stylized "J" for "JSON" -->
+  <path d="M120 80 L120 110 C120 120, 110 120, 105 120" 
+        fill="none" stroke="#38b2ac" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
