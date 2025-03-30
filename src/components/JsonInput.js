@@ -157,7 +157,7 @@ const JSONInput = ({ onJSONChange, onError }) => {
 
   const loadSampleJSON = async () => {
     try {
-      const response = await fetch("/api/sample");
+      const response = await fetch("https://dummyjson.com/products/1");
       const data = await response.json();
       const formatted = JSON.stringify(data, null, 2);
       setInputValue(formatted);

@@ -127,7 +127,7 @@ const Header = ({ toggleTheme, themeMode }) => {
                 color={themeMode === "light" ? "action.active" : "inherit"}
                 aria-label="github"
                 component="a"
-                href="https://github.com"
+                href="https://github.com/Debojit-mitra/PrettyJson"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{
@@ -183,7 +183,7 @@ const Header = ({ toggleTheme, themeMode }) => {
             >
               <MenuItem
                 component="a"
-                href="https://github.com"
+                href="https://github.com/Debojit-mitra/PrettyJson"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={handleMobileMenuClose}
