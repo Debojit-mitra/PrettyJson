@@ -24,7 +24,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/PrettyJson.git
+   git clone https://github.com/Debojit-mitra/PrettyJson.git
    cd prettyjson
    ```
 
