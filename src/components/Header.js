@@ -16,6 +16,7 @@ import {
 import CodeIcon from "@mui/icons-material/Code";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
+import WebIcon from "@mui/icons-material/Web";
 import ThemeToggle from "./ThemeToggle";
 
 const Header = ({ toggleTheme, themeMode }) => {
@@ -141,6 +142,25 @@ const Header = ({ toggleTheme, themeMode }) => {
                 <GitHubIcon />
               </IconButton>
             </Tooltip>
+            <Tooltip title="View Portfolio">
+              <IconButton
+                color={themeMode === "light" ? "action.active" : "inherit"}
+                aria-label="portfolio"
+                component="a"
+                href="https://debojit-mitra.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  transition: "all 0.2s",
+                  "&:hover": {
+                    transform: "translateY(-2px)",
+                    color: "primary.main",
+                  },
+                }}
+              >
+                <WebIcon />
+              </IconButton>
+            </Tooltip>
           </Box>
 
           {/* Mobile menu */}
@@ -164,7 +184,7 @@ const Header = ({ toggleTheme, themeMode }) => {
                   borderRadius: 2,
                   overflow: "visible",
                   filter: "drop-shadow(0px 2px 8px rgba(0,0,0,0.15))",
-                  mt: 1.5,
+                  mt: 2.5,
                   minWidth: 180,
                   "& .MuiMenuItem-root": {
                     px: 2,
@@ -188,7 +208,17 @@ const Header = ({ toggleTheme, themeMode }) => {
                 rel="noopener noreferrer"
                 onClick={handleMobileMenuClose}
               >
-                <GitHubIcon sx={{ mr: 1.5, fontSize: "1.25rem" }} /> GitHub
+                <GitHubIcon sx={{ mr: 1.5, fontSize: "1.25rem" }} /> View on
+                GitHub
+              </MenuItem>
+              <MenuItem
+                component="a"
+                href="https://debojit-mitra.github.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleMobileMenuClose}
+              >
+                <WebIcon sx={{ mr: 1.5, fontSize: "1.25rem" }} /> My Portfolio
               </MenuItem>
             </Menu>
           </Box>
